@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InSync</string>
+    <string name="helloMessege">hello</string>
 </resources>
