@@ -53,23 +53,15 @@
 
     <TextView
         android:id="@+id/helloMessege"
-        android:layout_width="168dp"
-        android:layout_height="31dp"
+        android:layout_width="58dp"
+        android:layout_height="29dp"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="107dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="297dp"
         android:text="@string/helloMessege"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextField" />
-
-    <Button
-        android:id="@+id/change"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ChangeView"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="375dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
