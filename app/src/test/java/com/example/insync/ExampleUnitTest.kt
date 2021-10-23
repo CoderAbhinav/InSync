@@ -35,5 +35,12 @@ class ExampleUnitTest {
 
     }
 
+    @Test
+    fun dummyChecker(){
+        val inst = authService();
+        assertEquals(4, inst.dummy());
+    }
+
+
 
 }

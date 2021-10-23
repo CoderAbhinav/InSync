@@ -9,6 +9,10 @@ class authService {
     var done: Boolean = false;
     var uid:String = "NO";
 
+    public fun dummy():Int{
+        return 3
+    }
+
     public fun loginWithEmain(email: String, password: String):Boolean {
         GlobalScope.launch {
             var auth = FirebaseAuth.getInstance();
