@@ -26,12 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         val x = ls.loginWithEmain(email = email.toString(), password = psw.toString());
         val msg = findViewById<TextView>(R.id.helloMessege);
-        if(x){
-            msg.text = "SUCESSFUl";
-        }
-        else{
-            msg.text = "FAILED";
-        }
 
 
     }
