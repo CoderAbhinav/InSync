@@ -1,5 +1,6 @@
 package com.example.insync
 
+import android.util.Log
 import com.example.insync.services.authService
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -20,9 +21,16 @@ class ExampleUnitTest {
     @Test
     fun loginCheck(){
         val inst = authService();
-        GlobalScope.launch {
 
-            assertEquals(true, inst.loginWithEmain("abhinavrb.a02@gmail.com", "12345"));
+        GlobalScope.launch {
+            val uid =  "pXAmCOyFOgYipXnd3SwHf3qYdtT2"
+            val email =  "test1234@gmail.com"
+            val psw = "test1234"
+
+            inst.loginWithEmain(email, psw)
+            Log.d("Firebase",inst.uid)
+            System.out.println(inst.uid);
+            assertEquals(true, inst.done);
         }
 
     }
